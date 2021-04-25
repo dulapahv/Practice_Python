@@ -1,0 +1,6 @@
+x = float(input("First Number : "))
+y = float(input("Second Number : "))
+print(x,"+",y,"=",x + y)
+print(x,"-",y,"=",x - y)
+print(x,"*",y,"=",x * y)
+print(x,"/",y,"=",x / y)
