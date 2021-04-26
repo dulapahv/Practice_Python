@@ -37,7 +37,7 @@ if username == "n0miya" and password == "02468":
         total2 *= quantity2
     if answer1 == "N" or answer1 == "n":
         print("Total :", total1)
-        exit(1)
+        exit(0)
     print("Do you want to buy anything else?")
     answer2 = str(input("Y/N"))
     if answer2 == "Y" or answer2 == "y":
@@ -53,9 +53,9 @@ if username == "n0miya" and password == "02468":
             print("Please select only items that are available!")
         total3 *= quantity3
         print("Total :", total1 + total2 + total3)
-        exit(1)
+        exit(0)
     if answer2 == "N" or answer2 == "n":
         print("Total :", total1 + total2)
-        exit(1)
+        exit(0)
 else:
     print("Wrong Username or Password!")
