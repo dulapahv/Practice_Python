@@ -3,15 +3,11 @@ priceList = []
 
 
 def showBill():
+    total = 0
     print("---- My Food ----")
     for number in range(len(menuList)):
         print(menuList[number], priceList[number])
-
-
-def findTotal():
-    total = 0
-    for i in range(len(priceList)):
-        total += int(priceList[i])
+        total += int(priceList[number])
     print("Total", total)
 
 
@@ -24,4 +20,3 @@ while True:
         menuList.append(menuName)
         priceList.append(menuPrice)
 showBill()
-findTotal()
