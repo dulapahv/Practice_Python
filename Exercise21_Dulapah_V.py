@@ -3,20 +3,18 @@ import math
 
 
 def leftClickButton(event):
-    global explanation
     result = float(textBoxWeight.get()) / math.pow(float(textBoxHeight.get()) / 100, 2)
     labelResult.configure(text="Your BMI is " + str(result))
     if result >= 30:
-        explanation = "extremely obese"
+        resultExplain.configure(text="You are extremely obese.", fg="red", bg="black")
     elif 25 <= result <= 29.9:
-        explanation = "obese"
+        resultExplain.configure(text="You are obese.", fg="orange", bg="black")
     elif 23 <= result <= 24.9:
-        explanation = "overweight"
+        resultExplain.configure(text="You are overweight.", fg="yellow", bg="black")
     elif 18.6 <= result <= 22.9:
-        explanation = "healthy"
+        resultExplain.configure(text="You are healthy.", fg="green", bg="black")
     elif result <= 18.5:
-        explanation = "underweight"
-    resultExplain.configure(text="You are " + explanation + ".")
+        resultExplain.configure(text="You are underweight.", fg="blue", bg="black")
 
 
 MainWindow = Tk()
