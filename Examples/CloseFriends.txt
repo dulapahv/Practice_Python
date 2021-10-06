@@ -1,0 +1,5 @@
+Name, Favorite Movie, Favorite Pet
+Nono, Nekopara, Cat
+Judge, Fate/Kaleid Liner Prisma Illya, Cat
+Tar, Date a Live, Hamster
+Tien, Puella Magi Madoka Magica, Hamster
